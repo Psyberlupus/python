@@ -2,15 +2,15 @@ import socket
 # Sample code for TCP or UDP client in python
 # change target address and port
 
-print "Enter target and port!!"
+print ("Enter target and port!!")
 target_host = raw_input("Target hostname: ")
 target_port = raw_input("Port?  ")
-target_port = int(target_port
+target_port = int(target_port)
 if not target_host:
    target_host = "127.0.0.1" # provide a hostname
 if not target_port:
    target_port = 1234 # provide a port to connect
-print "TCP or UDP socket client!!"
+print ("TCP or UDP socket client!!")
 TCP = raw_input("Enter 1 for TCP and 0 for UDP connection:  ")
 # create a socket object
 if TCP:
